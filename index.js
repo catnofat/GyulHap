@@ -86,7 +86,7 @@ imageCards[27] = [333, 'image/card27.png'];
         setTimeout(function(){
             alert("당신의 점수는"+score+"점입니다");
             location.reload();
-        },20000);
+        },100000);
     }
 
 
