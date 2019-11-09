@@ -1,55 +1,84 @@
+/*모바일 화면*/
 body{
-    background-color : rgb(101, 0, 11);
+    background-color : #CD5C5C;
 }
 
-h1{
+h1{  /* 제목 부분 */
+    display : inline-block;
     position : absolute;
-    top : 0%;
     left : 50%;
-    transform : translate(-50%, -30%);
-
-
+    transform : translate(-50%, 20%);
+    margin-top : 10%;
+    color : #FFD700;
+    background-color : #6B473C;
 
     text-align : center;
     font-size: 40px;
-    color : #D4AF37;
-    
-    margin-top : 15%;
 
-    border : 2px #D4AF37 solid;
+    border : 2px #FFD700 solid;
 }
 
+#start{
+    text-decoration: none;
+    color : #FFD700;
+
+}
 
 
 #tile1, #tile2, #tile3, #tile4, #tile5, #tile6, #tile7, #tile8, #tile9{
 
-    display : inline-block;   
-    background-image : url('image/introimg.png');
-    background-size : 40px 40px;
-    height : 40px;
-    width : 40px;
+    display : inline-block;
+    height : 0;
+    width : 20%;
+    padding-bottom : 20%;
+    
+    background-color :  #6B473C;
+    background-size : cover;
+    
+    
+    
+    
 
 }
 
-.tile{
+#tile1, #tile4, #tile7{
+    clear : left;
+    margin-left : 20%;
+}
+
+#tile3, #tile6, #tile9{
     clear : right;
+    margin-right : 20%;
 }
 
 .content{
     clear : right;
     position : absolute;
-    top : 50%;
+    width : 90%;
+    top : 30%;
+    transform : translate(-50%, -15%);
+
     left : 50%;
-    transform : translate(-50%, -50%);
+
+   
 
 }
 
 #gyul{
-    font-size: 15px;
+    display : inline-block;
+    width : 8%;
+    height : 4%;
+    font-size: 18px;
     position : absolute;
-    top : 120%;
-    left : 50%;
-    transform: translate(-50%, -50%);
+    left : 10%;
+    bottom : 50%;
+    transform: translate(-50%, -70%);
+    text-decoration : none;
+    color : #FFD700;
+    border : 2px #FFD700 solid;
+    background-color : #6B473C;
+    text-align: center;
+
 
 }
 
@@ -58,10 +87,229 @@ h1{
     top : 80%;
     left : 50%;
     transform : translate(-50%, -50%);
+    color : #FFD700;
+    border : 2px #FFD700 solid;
+    background-color : #6B473C;
+
+
+}
+#gscore{
+    width : 50%;
+}
+
+.timer{
+ color : #FFD700;
 
 }
 
 
+@media ( min-width: 580px ){
 
+    body{
+        background-color : #CD5C5C;
+    }
+    
+    h1{  /* 제목 부분 */
+        display : inline-block;
+        position : absolute;
+        left : 50%;
+        transform : translate(-50%, -100%);
+        color : #FFD700;
+        background-color : #6B473C;
+    
+        text-align : center;
+        font-size: 40px;
+    
+        border : 2px #FFD700 solid;
+    }
+    
+    #start{
+        text-decoration: none;
+        color : #FFD700;
+    
+    }
+    
+    
+    #tile1, #tile2, #tile3, #tile4, #tile5, #tile6, #tile7, #tile8, #tile9{
+    
+        display : inline-block;
+        height : 0;
+        width : 20%;
+        padding-bottom : 20%;
+        
+        background-color :  #6B473C;
+        background-size : cover;
+        
+        
+        
+        
+    
+    }
+    
+    #tile1, #tile4, #tile7{
+        clear : left;
+        margin-left : 20%;
+    }
+    
+    #tile3, #tile6, #tile9{
+        clear : right;
+        margin-right : 20%;
+    }
+    
+    .content{
+        clear : right;
+        position : absolute;
+        width : 40%;
+        top : 30%;
+        transform : translate(-50%, -15%);
+    
+        left : 50%;
+    
+       
+    
+    }
+    
+    #gyul{
+        display : inline-block;
+        width : 8%;
+        height : 4%;
+        font-size: 18px;
+        position : absolute;
+        left : 20%;
+        bottom : 50%;
+        transform: translate(-50%, -70%);
+        text-decoration : none;
+        color : #FFD700;
+        border : 2px #FFD700 solid;
+        background-color : #6B473C;
+        text-align: center;
+    
+    
+    }
+    
+    .score{
+        position : absolute;
+        top : 80%;
+        left : 50%;
+        transform : translate(-50%, 10%);
+        color : #FFD700;
+        border : 2px #FFD700 solid;
+        background-color : #6B473C;
+    
+    
+    }
+    #gscore{
+        width : 50%;
+    }
+    
+    
+    .timer{
+     color : #FFD700;
+    
+    }
+}
 
-
+@media ( min-width: 1200px ){
+    body{
+        background-color : #CD5C5C;
+    }
+    
+    h1{  /* 제목 부분 */
+        display : inline-block;
+        position : absolute;
+        left : 50%;
+        transform : translate(-50%, -150%);
+        color : #FFD700;
+        background-color : #6B473C;
+    
+        text-align : center;
+        font-size: 40px;
+    
+        border : 2px #FFD700 solid;
+    }
+    
+    #start{
+        text-decoration: none;
+        color : #FFD700;
+    
+    }
+    
+    
+    #tile1, #tile2, #tile3, #tile4, #tile5, #tile6, #tile7, #tile8, #tile9{
+    
+        display : inline-block;
+        height : 0;
+        width : 20%;
+        padding-bottom : 20%;
+        
+        background-color :  #6B473C;
+        background-size : cover;
+        
+        
+        
+        
+    
+    }
+    
+    #tile1, #tile4, #tile7{
+        clear : left;
+        margin-left : 20%;
+    }
+    
+    #tile3, #tile6, #tile9{
+        clear : right;
+        margin-right : 20%;
+    }
+    
+    .content{
+        clear : right;
+        position : absolute;
+        width : 30%;
+        top : 30%;
+        transform : translate(-50%, -15%);
+    
+        left : 50%;
+    
+       
+    
+    }
+    
+    #gyul{
+        display : inline-block;
+        width : 8%;
+        height : 4%;
+        font-size: 18px;
+        position : absolute;
+        left : 20%;
+        bottom : 50%;
+        transform: translate(-50%, -70%);
+        text-decoration : none;
+        color : #FFD700;
+        border : 2px #FFD700 solid;
+        background-color : #6B473C;
+        text-align: center;
+    
+    
+    }
+    
+    .score{
+        position : absolute;
+        top : 90%;
+        left : 50%;
+        transform : translate(-50%, 10%);
+        color : #FFD700;
+        border : 2px #FFD700 solid;
+        background-color : #6B473C;
+    
+    
+    }
+    #gscore{
+        width : 50%;
+    }
+    
+    
+    .timer{
+     color : #FFD700;
+    
+    }
+}

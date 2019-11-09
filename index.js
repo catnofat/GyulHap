@@ -87,7 +87,13 @@ imageCards[27] = [333, 'image/card27.png'];
             alert("당신의 점수는"+score+"점입니다");
             location.reload();
         },100000);
-    }
+
+        var gameTime= 100000;
+        setInterval(function(){
+            gameTime -= 1000;
+            document.getElementById("gTime").innerHTML= "남은시간 : " + gameTime/1000;},1000);
+
+        }
 
 
 console.log(allHap);
