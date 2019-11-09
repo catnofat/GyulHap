@@ -1,0 +1,61 @@
+h1{
+    position : absolute;
+    top : 0%;
+    left : 50%;
+    transform : translate(-50%, -30%);
+
+
+
+    text-align : center;
+    font-size: 40px;
+    margin-top : 15%;
+
+    border : 2px red solid;
+}
+
+
+
+#tile1, #tile2, #tile3, #tile4, #tile5, #tile6, #tile7, #tile8, #tile9{
+
+    display : inline-block;   
+    background-image : url('image/introimg.png');
+    background-size : 40px 40px;
+    height : 40px;
+    width : 40px;
+
+}
+
+.tile{
+    clear : right;
+}
+
+.content{
+    clear : right;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+
+}
+
+#gyul{
+    font-size: 15px;
+    position : absolute;
+    top : 120%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.score{
+    position : absolute;
+    top : 80%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+
+}
+
+
+
+
+
