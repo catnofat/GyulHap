@@ -83,7 +83,7 @@ body{
     text-decoration : none;
     color : white;
     font-weight: bold;
-    background-image : url('./image/wood.jpg');
+    background-color : rgba(173, 112, 71, 0.836);
     text-align: center;
 
 
@@ -97,7 +97,7 @@ body{
     transform : translate(-50%, -50%);
     font-weight: bold;
     color : white;
-    background-image : url('./image/wood.jpg')
+    background-image : rgba(173, 112, 71, 0.836);
 
 
 }
@@ -178,7 +178,7 @@ body{
         text-decoration : none;
         color : white;
 
-        background-color : #6B473C;
+        background-color : rgba(173, 112, 71, 0.836);
         text-align: center;
             
     
@@ -191,7 +191,7 @@ body{
         transform : translate(-50%, 10%);
         color : white;
 
-        background-color : rgb(160, 125, 115);
+        background-color : rgba(173, 112, 71, 0.836);
     
     
     }
@@ -271,7 +271,7 @@ body{
         transform: translate(-50%, 1200%);
         text-decoration : none;
         color : white;
-        background-color : #6B473C;
+        background-color : rgba(173, 112, 71, 0.836);
         text-align: center;
     
     
@@ -284,7 +284,7 @@ body{
         transform : translate(-50%, 10%);
         color : white;
         border : 2px #FFD700 solid;
-        background-color : #6B473C;
+        background-color : rgba(173, 112, 71, 0.836);
     
     
     }
