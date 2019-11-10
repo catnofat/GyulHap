@@ -8,7 +8,7 @@
 }
 /*모바일 화면*/
 body{
-    background-image :url(./image/background1.jpg);
+    background-image :url(./image/background1.png);
     background-size : cover;
 
 }
@@ -54,7 +54,7 @@ body{
     height : 0;
     width : 20%;
     padding-bottom : 20%;
-    background-image : url(./image/background1.jpg);
+    background-image : url(./image/background1.png);
 
     background-size : cover;
 
@@ -149,7 +149,7 @@ body{
         width : 20%;
         padding-bottom : 20%;
         
-        background-image : url(./image/background1.jpg);
+        background-image : url(./image/background1.png);
         background-size : cover;
         
     }
