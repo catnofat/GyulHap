@@ -1,54 +1,38 @@
-/*모바일 화면*/
-body{
-    background-color : #CD5C5C;
+@FONT-FACE{
+    font-family: 'arita';
+    src : url("./font/arita.ttf");
 }
 
-h1{  /* 제목 부분 */
-    display : inline-block;
-    position : absolute;
-    left : 50%;
-    transform : translate(-50%, 20%);
-    margin-top : 10%;
-    color : #FFD700;
-    background-color : #6B473C;
+*{
+    font-family: 'arita';
+}
+/*모바일 화면*/
+body{
+    background-image :url(./image/background1.png);
+    background-size : cover;
 
-    text-align : center;
-    font-size: 40px;
-
-    border : 2px #FFD700 solid;
 }
 
 #start{
     text-decoration: none;
-    color : #FFD700;
+    color : rgb(116, 25, 25);
+    font-weight : bold;
 
 }
 
-
-#tile1, #tile2, #tile3, #tile4, #tile5, #tile6, #tile7, #tile8, #tile9{
-
-    display : inline-block;
-    height : 0;
-    width : 20%;
-    padding-bottom : 20%;
-    
-    background-color :  #6B473C;
-    background-size : cover;
-    
-    
-    
-    
-
+#title{
+    display : block;
+    margin-left : auto;
+    margin-right : auto;
+    width : 70%;
 }
 
-#tile1, #tile4, #tile7{
-    clear : left;
-    margin-left : 20%;
-}
-
-#tile3, #tile6, #tile9{
-    clear : right;
-    margin-right : 20%;
+.timer{
+    color : rgb(116, 25, 25);
+    font-weight: bold;
+    text-align :center;
+   
+   
 }
 
 .content{
@@ -64,19 +48,42 @@ h1{  /* 제목 부분 */
 
 }
 
-#gyul{
+#tile1, #tile2, #tile3, #tile4, #tile5, #tile6, #tile7, #tile8, #tile9{
+
     display : inline-block;
+    height : 0;
+    width : 20%;
+    padding-bottom : 20%;
+    background-image : url(./image/background1.png);
+
+    background-size : cover;
+
+}
+
+#tile1, #tile4, #tile7{
+    clear : left;
+    margin-left : 20%;
+}
+
+#tile3, #tile6, #tile9{
+    clear : right;
+    margin-right : 20%;
+}
+
+
+
+#gyul{
     width : 8%;
-    height : 4%;
+    height : 3%;
     font-size: 18px;
     position : absolute;
-    left : 10%;
+    left : 50%;
     bottom : 50%;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, 700%);
     text-decoration : none;
-    color : #FFD700;
-    border : 2px #FFD700 solid;
-    background-color : #6B473C;
+    color : white;
+    font-weight: bold;
+    background-image : url('./image/wood.jpg');
     text-align: center;
 
 
@@ -84,78 +91,46 @@ h1{  /* 제목 부분 */
 
 .score{
     position : absolute;
+    text-align : center;
     top : 80%;
     left : 50%;
     transform : translate(-50%, -50%);
-    color : #FFD700;
-    border : 2px #FFD700 solid;
-    background-color : #6B473C;
+    font-weight: bold;
+    color : white;
+    background-image : url('./image/wood.jpg')
 
 
 }
 #gscore{
     width : 50%;
+    text-align : center;
 }
 
-.timer{
- color : #FFD700;
 
-}
 
 
 @media ( min-width: 580px ){
 
-    body{
-        background-color : #CD5C5C;
-    }
-    
-    h1{  /* 제목 부분 */
-        display : inline-block;
-        position : absolute;
-        left : 50%;
-        transform : translate(-50%, -100%);
-        color : #FFD700;
-        background-color : #6B473C;
-    
-        text-align : center;
-        font-size: 40px;
-    
-        border : 2px #FFD700 solid;
-    }
-    
+
     #start{
         text-decoration: none;
-        color : #FFD700;
+        color : rgb(116, 25, 25);
+        font-size : 25px;
     
     }
-    
-    
-    #tile1, #tile2, #tile3, #tile4, #tile5, #tile6, #tile7, #tile8, #tile9{
-    
-        display : inline-block;
-        height : 0;
-        width : 20%;
-        padding-bottom : 20%;
-        
-        background-color :  #6B473C;
-        background-size : cover;
-        
-        
-        
-        
-    
+
+    #title{
+        display : block;
+        margin-left : auto;
+        margin-right : auto;
+        width :50%;
     }
-    
-    #tile1, #tile4, #tile7{
-        clear : left;
-        margin-left : 20%;
-    }
-    
-    #tile3, #tile6, #tile9{
-        clear : right;
-        margin-right : 20%;
-    }
-    
+
+    .timer{
+        color : rgb(116, 25, 25);
+       
+       }
+
     .content{
         clear : right;
         position : absolute;
@@ -164,74 +139,6 @@ h1{  /* 제목 부분 */
         transform : translate(-50%, -15%);
     
         left : 50%;
-    
-       
-    
-    }
-    
-    #gyul{
-        display : inline-block;
-        width : 8%;
-        height : 4%;
-        font-size: 18px;
-        position : absolute;
-        left : 20%;
-        bottom : 50%;
-        transform: translate(-50%, -70%);
-        text-decoration : none;
-        color : #FFD700;
-        border : 2px #FFD700 solid;
-        background-color : #6B473C;
-        text-align: center;
-    
-    
-    }
-    
-    .score{
-        position : absolute;
-        top : 80%;
-        left : 50%;
-        transform : translate(-50%, 10%);
-        color : #FFD700;
-        border : 2px #FFD700 solid;
-        background-color : #6B473C;
-    
-    
-    }
-    #gscore{
-        width : 50%;
-    }
-    
-    
-    .timer{
-     color : #FFD700;
-    
-    }
-}
-
-@media ( min-width: 1200px ){
-    body{
-        background-color : #CD5C5C;
-    }
-    
-    h1{  /* 제목 부분 */
-        display : inline-block;
-        position : absolute;
-        left : 50%;
-        transform : translate(-50%, -150%);
-        color : #FFD700;
-        background-color : #6B473C;
-    
-        text-align : center;
-        font-size: 40px;
-    
-        border : 2px #FFD700 solid;
-    }
-    
-    #start{
-        text-decoration: none;
-        color : #FFD700;
-    
     }
     
     
@@ -242,13 +149,9 @@ h1{  /* 제목 부분 */
         width : 20%;
         padding-bottom : 20%;
         
-        background-color :  #6B473C;
+        background-image : url(./image/background1.png);
         background-size : cover;
         
-        
-        
-        
-    
     }
     
     #tile1, #tile4, #tile7{
@@ -261,31 +164,113 @@ h1{  /* 제목 부분 */
         margin-right : 20%;
     }
     
-    .content{
-        clear : right;
-        position : absolute;
-        width : 30%;
-        top : 30%;
-        transform : translate(-50%, -15%);
-    
-        left : 50%;
-    
-       
-    
-    }
+
     
     #gyul{
         display : inline-block;
         width : 8%;
-        height : 4%;
+        height : 3%;
+        font-size: 20px;
+        position : absolute;
+        left : 50%;
+        bottom : 50%;
+        transform: translate(-50%, 700%);
+        text-decoration : none;
+        color : white;
+
+        background-color : #6B473C;
+        text-align: center;
+            
+    
+    }
+    
+    .score{
+        position : absolute;
+        top : 80%;
+        left : 50%;
+        transform : translate(-50%, 10%);
+        color : white;
+
+        background-color : rgb(160, 125, 115);
+    
+    
+    }
+    #gscore{
+        width : 50%;
+    }
+    
+    
+ 
+}
+
+@media ( min-width: 1200px ){
+
+    #start{
+        text-decoration: none;
+        color : rgb(116, 25, 25);
+        font-size : 30px;
+    
+    }
+    
+    #title{
+        display : block;
+        margin-left : auto;
+        margin-right : auto;
+        width : 40%;
+    }
+    .timer{
+        color : rgb(116, 25, 25);
+       
+       }
+    
+     .content{
+        clear : right;
+        position : absolute;
+        width : 30%;
+        top : 30%;
+        transform : translate(-50%, 10%);
+    
+        left : 50%;
+    }
+    
+
+    
+    
+    #tile1, #tile2, #tile3, #tile4, #tile5, #tile6, #tile7, #tile8, #tile9{
+    
+        display : inline-block;
+        height : 0;
+        width : 20%;
+        padding-bottom : 20%;
+        
+        background-image : url(./image/background1.png);
+        background-size : cover;
+        
+    }
+    
+    #tile1, #tile4, #tile7{
+        clear : left;
+        margin-left : 20%;
+    }
+    
+    #tile3, #tile6, #tile9{
+        clear : right;
+        margin-right : 20%;
+    }
+    
+
+    
+    #gyul{
+        display : inline-block;
+        width : 8%;
+        height : 3%;
         font-size: 18px;
         position : absolute;
-        left : 20%;
+        left : 50%;
         bottom : 50%;
-        transform: translate(-50%, -70%);
+        transform: translate(-50%, 1200%);
         text-decoration : none;
-        color : #FFD700;
-        border : 2px #FFD700 solid;
+        color : white;
         background-color : #6B473C;
         text-align: center;
     
@@ -297,7 +282,7 @@ h1{  /* 제목 부분 */
         top : 90%;
         left : 50%;
         transform : translate(-50%, 10%);
-        color : #FFD700;
+        color : white;
         border : 2px #FFD700 solid;
         background-color : #6B473C;
     
@@ -306,10 +291,5 @@ h1{  /* 제목 부분 */
     #gscore{
         width : 50%;
     }
-    
-    
-    .timer{
-     color : #FFD700;
-    
-    }
+
 }
