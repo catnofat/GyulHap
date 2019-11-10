@@ -102,8 +102,7 @@ var tt = 0;  // 합을 맞춘 횟수
 $(function(){       
     var $buttons = $("button");
     $buttons.click(function(){  //버튼 속성을 클릭시
-        var $gScore = $("#gscore");  //스코어가 출력되는 html 클래스 참조
-          //클릭한 버튼의 밸류값을 저장하는 변수
+        var newVal = $(this).val(); // 클릭한 타일의 val 값을 불러옴
         newVal = Number(newVal); //밸류값은 숫자형
         
         linkNum.unshift(newVal); 
