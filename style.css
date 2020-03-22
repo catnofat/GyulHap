@@ -8,7 +8,7 @@
 }
 /*모바일 화면*/
 body{
-    background-image :url(./image/background1.jpg);
+    background-color : #E4DFCC;
     background-size : cover;
 
 }
@@ -54,7 +54,8 @@ body{
     height : 0;
     width : 20%;
     padding-bottom : 20%;
-    background-image : url(./image/background1.jpg);
+    background-color : rgba(0,0,0,0);
+    border-radius : 20px;
 
     background-size : cover;
 
@@ -81,9 +82,10 @@ body{
     bottom : 50%;
     transform: translate(-50%, 700%);
     text-decoration : none;
-    color : white;
+    color : rgba(173, 112, 71, 0.836);
     font-weight: bold;
-    background-color : rgba(173, 112, 71, 0.836);
+
+    background-color : #E4DFCC;
     text-align: center;
 
 
@@ -96,8 +98,7 @@ body{
     left : 50%;
     transform : translate(-50%, -50%);
     font-weight: bold;
-    color : white;
-    background-color : rgba(173, 112, 71, 0.836);
+    color :  rgba(173, 112, 71, 0.836);
 
 
 }
@@ -149,7 +150,7 @@ body{
         width : 20%;
         padding-bottom : 20%;
         
-        background-image : url(./image/background1.jpg);
+        background-color : rgba(0,0,0,0);
         background-size : cover;
         
     }
@@ -176,9 +177,7 @@ body{
         bottom : 50%;
         transform: translate(-50%, 700%);
         text-decoration : none;
-        color : white;
-
-        background-color : rgba(173, 112, 71, 0.836);
+        color : rgba(173, 112, 71, 0.836);
         text-align: center;
             
     
@@ -189,9 +188,7 @@ body{
         top : 80%;
         left : 50%;
         transform : translate(-50%, 10%);
-        color : white;
-
-        background-color : rgba(173, 112, 71, 0.836);
+        color : rgba(173, 112, 71, 0.836);
     
     
     }
@@ -243,7 +240,7 @@ body{
         width : 20%;
         padding-bottom : 20%;
         
-        background-image : url(./image/background1.png);
+        background-color: rgba(0,0,0,0);
         background-size : cover;
         
     }
@@ -270,8 +267,7 @@ body{
         bottom : 50%;
         transform: translate(-50%, 1200%);
         text-decoration : none;
-        color : white;
-        background-color : rgba(173, 112, 71, 0.836);
+        color : rgba(173, 112, 71, 0.836);
         text-align: center;
     
     
@@ -282,11 +278,8 @@ body{
         top : 90%;
         left : 50%;
         transform : translate(-50%, 10%);
-        color : white;
-        border : 2px #FFD700 solid;
-        background-color : rgba(173, 112, 71, 0.836);
-    
-    
+        color : rgba(173, 112, 71, 0.836);
+
     }
     #gscore{
         width : 50%;
