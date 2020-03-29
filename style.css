@@ -17,6 +17,8 @@ body{
     text-decoration: none;
     color : rgb(116, 25, 25);
     font-weight : bold;
+    background : none;
+    border : none;
 
 }
 
@@ -86,6 +88,7 @@ body{
     font-weight: bold;
 
     background-color : #E4DFCC;
+    border : none;
     text-align: center;
 
 

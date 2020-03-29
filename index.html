@@ -12,7 +12,7 @@
   	crossorigin="anonymous"></script>
 </head>
 <body>
-	<a onclick = "showImage(); findAllHap(); scoreTime();" id = "start" > Start </a>
+	<button onclick = "showImage(); findAllHap(); scoreTime(); disabled = 'disabled' " id = "start"> Start </button>
 	<img src="./image/title.png"  id = "title">
 	<div class = "score">
 		<p> 스코어 :  <input type = "text" id = "gscore"> <p> 
@@ -46,7 +46,7 @@
 			</table>	
 		</div>
 	</div>
-	<a href = "#" id = "gyul">결</a>
+	<button href = "#" id = "gyul">결</button>
 </body>
 <script type = "text/javascript" src="./index.js"></script>
 </html>
